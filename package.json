@@ -1,0 +1,16 @@
+{
+  "name": "sample-nodejs-structure",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:backend": "pnpm --filter backend dev",
+    "build:frontend": "pnpm --filter frontend build",
+    "build:backend": "pnpm --filter backend build",
+    "typecheck": "pnpm --filter frontend typecheck && pnpm --filter backend typecheck",
+    "lint": "pnpm --filter frontend lint && pnpm --filter backend lint",
+    "test": "pnpm --filter frontend test && pnpm --filter backend test"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}
